@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beden Endeksi</title>
+</head>
+<body>
+    <script>
+        let kilo = Number(prompt("Kilonuzu Giriniz :"));
+        let boy = Number(prompt("Lütfen boyunuzu metre cinsinden giriniz :"));
+        let sonuc = kilo/(boy*2); /*ilk önce parentezdeki işlemi yapar boyun karesini kilo'ya bölüyor ona göre çıkan sonucu yazıyor*/ 
+
+        if(sonuc<18.5){
+            document.write("İdeal kilonun altında" + sonuc);
+}else if (sonuc>=18.5 && sonuc<=24.9){
+    document.write("İdeal kilonun altında" + sonuc);
+}else if(sonuc>=25 && sonuc<=29.9){
+document.write("deal kiloda" + sonuc);
+}else if(sonuc>=30 && sonuc<=39.9){
+    document.write("İdeal kilonun çok üstünde (obez)" + sonuc);
+}else if(sonuc>=40){
+    document.write("İdeal kilonun çok üstünde (morbid obez)" + sonuc);
+}
+
+    </script>
+</body>
+</html>
